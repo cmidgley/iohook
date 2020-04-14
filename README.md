@@ -28,8 +28,8 @@ To build iohook for RPi (and maybe other platform) the following must be done:
 
 To build a release:
 * `npm install mkdirp archiver cmake-js`
-* `node build.js --no-upload --runtime node --version 13.12.0 --abi 70`
-   - Resulting build will be in prebuilds folder, such as `./prebuilds/iohook-v0.6.5-node-v70-linux-arm.tar.gz`
+* `node build.js --no-upload --runtime node --version 13.12.0 --abi 79`
+   - Resulting build will be in prebuilds folder, such as `./prebuilds/iohook-v0.6.5-node-v79-linux-arm.tar.gz`
 
 
 ## About
