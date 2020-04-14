@@ -31,9 +31,9 @@ function install(runtime, abi, platform, arch, cb) {
   console.log('Downloading prebuild for platform:', currentPlatform);
   var downloadUrl;
   if (platform != 'arm')
-    let downloadUrl = 'https://github.com/wilix-team/iohook/releases/download/v' + pkgVersion + '/' + currentPlatform + '.tar.gz';
+    downloadUrl = 'https://github.com/wilix-team/iohook/releases/download/v' + pkgVersion + '/' + currentPlatform + '.tar.gz';
   else
-    let downloadUrl = 'https://github.com/cmidgley/iohook/releases/download/v' + pkgVersion + '-cmidgley/' + currentPlatform + '.tar.gz';
+    downloadUrl = 'https://github.com/cmidgley/iohook/releases/download/v' + pkgVersion + '-cmidgley/' + currentPlatform + '.tar.gz';
 
   let nuggetOpts = {
     dir: os.tmpdir(),
