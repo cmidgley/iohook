@@ -5,6 +5,12 @@
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/iohookjs/Lobby)
 [![NPM version](https://img.shields.io/npm/v/iohook.svg)](https://www.npmjs.com/package/iohook)
 
+# About this fork
+
+This fork has the following changes:
+* Release build for ARM (Node 13 only)
+* Tiny change to 'install.js' to reference 'npm run build' instead of 'npm run compile' in a console.log message
+
 ## About
 
 Node.js global native keyboard and mouse listener.
