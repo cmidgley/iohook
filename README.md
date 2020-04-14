@@ -10,6 +10,20 @@
 This fork has the following changes:
 * Release build for ARM (Node 13 only)
 * Tiny change to 'install.js' to reference 'npm run build' instead of 'npm run compile' in a console.log message
+* Added comments on how to build for ARM (Raspberry Pi)
+* Adjusted installer script (install.js) to reference this repo
+
+# Building this module for Raspberry Pi
+
+To build iohook for RPi (and maybe other platform) the following must be done:
+
+* Clone this repo
+* Install dependencies:
+    sudo apt install libx11-dev libxtst-dev libxt-dev libx11-xcb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf libtool libxinerama-dev libxkbfile-dev
+* Install NPM dependencies
+    npm install nan
+* Build iohook.node
+    npm run build
 
 ## About
 
