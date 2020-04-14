@@ -12,6 +12,7 @@ This fork has the following changes:
 * Tiny change to 'install.js' to reference 'npm run build' instead of 'npm run compile' in a console.log message
 * Added comments on how to build for ARM (Raspberry Pi, Raspbian Buster Lite)
 * Adjusted installer script (install.js) to reference this repo
+* Fixed a segmentation violation when no keyboards were found (see https://github.com/wilix-team/iohook/issues/207)
 
 # Building this module for Raspberry Pi
 

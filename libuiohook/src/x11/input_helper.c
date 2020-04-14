@@ -1905,6 +1905,7 @@ void load_input_helper(Display *disp) {
 		logger(LOG_LEVEL_ERROR,
 				"%s [%u]: XkbGetKeyboard failed to locate a valid keyboard!\n",
 				__FUNCTION__, __LINE__);
+		return;
 	}
 
 	// Get the map.
