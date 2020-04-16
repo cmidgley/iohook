@@ -8,7 +8,7 @@
 # About this fork
 
 This fork has the following changes:
-* Release build for ARM (Node 12 and 13 only)
+* Release build for ARM (Node versions 8, 10, 12 and 13)
 * Tiny change to 'install.js' to reference 'npm run build' instead of 'npm run compile' in a console.log message
 * Added comments on how to build for ARM (Raspberry Pi, Raspbian Buster Lite)
 * Adjusted installer script (install.js) to reference this repo
@@ -29,6 +29,12 @@ To build iohook for RPi (and maybe other platform) the following must be done:
 
 To build a release:
 * `npm install mkdirp archiver cmake-js`
+* For Node 8:
+   - `node build.js --no-upload --runtime node --version 8.17.0 --abi 57`
+   - Resulting build will be in prebuilds folder, such as `./prebuilds/iohook-v0.6.5-node-v72-linux-arm.tar.gz`
+* For Node 10:
+   - `node build.js --no-upload --runtime node --version 10.20.2 --abi 64`
+   - Resulting build will be in prebuilds folder, such as `./prebuilds/iohook-v0.6.5-node-v64-linux-arm.tar.gz`
 * For Node 12:
    - `node build.js --no-upload --runtime node --version 12.16.2 --abi 72`
    - Resulting build will be in prebuilds folder, such as `./prebuilds/iohook-v0.6.5-node-v72-linux-arm.tar.gz`
